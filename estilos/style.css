@@ -1,1 +1,255 @@
 @charset "UTF-8";
+
+:root {
+    --background-principal: white;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+body, html {
+    background-color: rgb(10, 10, 82);
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden
+}
+
+main, menu {
+    width: 90vw;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+main {
+    background-color: white;
+    text-align: center;
+    margin-top: 5px;
+}
+
+footer {
+    background-color: white;
+    text-align: center;
+    margin-top: 0px;
+    width: 100vw;
+}
+
+header {
+    background-color: rgb(177, 177, 252);
+    width: 100%;
+    min-height: 15%;
+    font-size: 15px;
+    position: relative;
+}
+
+#logo {
+    display: inline-block;
+    width: 60px;
+    float: left;
+}
+
+menu {
+    margin-bottom: 5px;
+    display: none;
+    width: 100%;
+    padding: 0px;
+}
+
+menu ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+menu li {
+    border: 1px solid rgb(5, 5, 94);
+}
+
+menu a {
+    text-decoration: none;
+    background-color: rgb(177, 177, 252);
+    color: rgb(10, 10, 82);
+    font-weight: bold;
+    display: block;
+    border-top: none;
+    padding: 5px;
+    border: none;
+}
+
+menu a:hover {
+    background-color: rgba(10, 10, 82, 0.301);
+    color: white;
+    font-weight: bold;
+}
+
+span {
+    display: block;
+    float: left;  
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    transform: translate(-50px, 10px);
+    
+}
+
+#burguer {
+    display: block;
+    float: left;
+    transform: translate(-110%, 130%);
+}
+
+#pesquisa {
+    display: inline-block;
+    padding-top: 5px;
+}
+
+input#ipesquisa {
+    padding: 5px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#person {
+    display: inline-block;
+    
+}
+
+header > form > input {
+    width: 300px;
+    border-radius: 5px;
+}
+
+#login {
+    display: block;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transform: translate(100px, -20px);
+}
+
+#login:hover {
+    color: rgb(10, 10, 82);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+div {
+    display: inline-block;
+    width: calc((100% / 2) - 2rem);
+    text-align: center;
+    padding-top: 25px;
+    border: 1px solid darkgray;
+    margin: 10px;
+}
+
+h1 {
+    padding: 10px;
+    font-size: 1.5em;
+    color: rgb(139, 31, 31);
+}
+
+h2, h3 {
+    padding: 2px;
+}
+
+h3 {
+    color: rgb(15, 85, 15);
+}
+
+.botao {
+    padding: 7px;
+    margin-bottom: 5px;
+    margin-top: 3px;
+    margin-left: 5px;
+    border-radius: 5px;
+    background-color: rgb(10, 10, 82);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: rgba(10, 10, 82, 0.13);
+    color: rgb(10, 10, 82);
+}
+
+footer {
+    background-color: rgb(150, 174, 238);
+    padding-bottom: 0px;
+}
+
+footer p {
+    padding-top: 10px;
+}
+
+.atendimento {
+    font-size: 0.8em;
+    text-align: center;
+}
+
+footer li {
+    text-align: center;
+}
+
+footer h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer > form > fieldset {
+    border: none;
+    text-align: center;
+    padding: 10px;
+}
+
+fieldset input {
+    width: 80%;
+    height: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.redes {
+    text-align: center;
+}
+
+footer >form > input {
+    
+    display: block;
+    width: 45%;
+    margin: auto;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(165, 165, 233);
+    color: white;
+}
+
+footer > form > input:hover {
+    background-color: rgb(188, 188, 226);
+    color: black;
+    cursor: pointer;
+}
+
+#info {
+    display: block;
+    background-color: rgb(174, 174, 245);
+    margin-top: 40px;
+    padding: 10px;
+}
+
+#info a {
+    color: black;
+    text-decoration: none;
+}
+
+#info a:hover {
+    text-decoration: underline;
+    color: rgb(10, 10, 82);
+    font-weight: bold;
+}

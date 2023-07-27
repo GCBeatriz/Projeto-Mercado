@@ -1,1 +1,153 @@
 @charset "UTF-8";
+
+@media screen and (min-width:320px) and (max-width:768px) {
+    div#diferente {
+        position: relative;
+        border: 0px;
+        margin: 0px;
+        top: -10px;
+        right: 40px;
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    
+    span#burguer {
+        display: none;
+    }
+
+    header menu {
+        display: block;
+    }
+
+    header li {
+        display: inline-block;
+    }
+
+    div#diferente {
+        position: absolute;
+        border: 0px;
+        margin: 0px;
+        top: -21px;
+        right: 70px;
+    }
+
+    #logins {
+        display: block;
+        float: right;
+    }
+
+    #login {
+        float: right;
+    }
+
+    footer input#enviar {
+        display: inline-block;
+        width: 250px;
+    }
+
+    footer label {
+        color: white;
+        font-weight: bold;
+    }
+
+    fieldset {
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width:992px) {
+
+    * {
+        font-size: 0.5em;
+    }
+
+    main {
+        max-width: 650px;
+    }
+
+    header {
+        position: relative;
+        height: 100px;
+    }
+
+    header form {
+        position: relative;
+        top: -10px;
+        left: 350px;
+    }
+
+    span#burguer {
+        display: none;
+    }
+
+    header menu {
+        display: block;
+    }
+
+    header li {
+        display: inline-block;
+        position: relative;
+        top: -60px;
+        
+    }
+
+    #login {
+        float: right;
+    }
+    
+    #ipesquisa {
+        padding: 8px;
+        width: 400px;
+    }
+
+    footer {
+        margin: 0px;
+        width: 100%;
+        height: 360px;
+    }
+
+    footer > p#info {
+        margin-top: 0px;
+        width: 100vw;
+    }
+
+    footer li {
+        display: inline-block;
+    }
+
+    footer > form input {
+        width: 250px;
+        padding: 14px;
+    }
+
+    footer input#enviar {
+        display: inline-block;
+        width: 250px;
+    }
+
+    footer label {
+        color: white;
+        font-weight: bold;
+    }
+
+    fieldset {
+        display: inline-block;
+    }
+
+    footer form {
+        background-color: rgb(10, 10, 82);
+    }
+
+    #menu {
+        text-align: right;
+        
+    }
+
+    #logins {
+        display: inline-block;
+    }
+
+}
+

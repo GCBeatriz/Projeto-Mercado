@@ -3,9 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/login.css">
+    <title>Document</title>
 </head>
 <body>
-    
+    <main>
+        <div id="imagem">
+        </div>
+        <h1>Já possui cadastro?</h1>
+        <p>Faça o login abaixo:</p>
+        <form action="fake.php" method="post" autocomplete="on">
+            <fieldset>
+                <label for="ilogin"><span class="material-symbols-outlined" id="person">person</span></label>
+                <input type="email" name="login" id="ilogin" placeholder="E-mail..." required>
+            </fieldset>
+
+            <fieldset>
+                <label for="isenha"><span class="material-symbols-outlined" id="person">vpn_key</span></label>
+                <input type="password" name="senha" id="isenha" placeholder="Senha..." required>
+            </fieldset>
+
+            <a href="#">Esqueceu sua senha?</a>
+            
+            <input type="submit" value="Entrar" id="submit">
+
+        </form>
+        <div>
+            <a href="">Cliente novo? Cadastre-se</a>
+        </div>
+        <button><a href="home.html">Voltar</a></button>
+    </main>
 </body>
 </html>

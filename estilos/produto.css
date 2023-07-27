@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+article section {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    flex-direction: column;
+}
+
+.voltar {
+    width: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #145e72;
+    font-weight: bold;
+}
+
+a:hover {
+    color: rgb(139, 31, 31);
+    text-decoration: underline;
+}
+
+p {
+    padding: 10px;
+}
+
+footer {
+    background-image: linear-gradient(#145e72, #90d6e9c2);
+    padding-bottom: 100px;
+    width: 100%;
+    
+}
+
+footer h1 {
+    color: white;
+}
+
+footer li {
+    display: inline-block;
+}
+
+fieldset {
+    display: inline-block;
+    margin-top: 0px;
+}
+
+section div {
+    background-color: white;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    width: 100%;
+    padding: 5px;
+    margin-left: 0px;
+}
+
+#descricao {
+    line-height: 25px;
+    margin-bottom: 0px;
+}
+
+.valor {
+    color: #145e72;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+div#fixed {
+    position: fixed;
+    color: black;
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    left:0px; 
+    bottom:0px;
+    overflow:hidden;
+    background-color: rgb(255, 255, 255);
+}
+
+div.caixa {
+    border: none;
+}
+
+#fixed p {
+    display: inline-block;
+}
+
+#fixed input {
+    padding: 5px;
+}
+
+#fixed input:hover {
+    background-color: rgba(169, 169, 169, 0.795);
+}
+
+#fixed input:active {
+    background-color: #145e7279;
+    color: white;
+}

@@ -1,0 +1,131 @@
+!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/produto.css">
+    <link rel="stylesheet" href="estilos/media-produto.css">
+    <title>Document</title>
+</head>
+<body onresize="mudouTamanho ()">
+    <header>
+        <img src="imagens/logofake.png" alt="" id="logo">
+
+        <form action="fake.php" id="pesquisa">
+            <input type="search" name="pesquisa" id="ipesquisa" placeholder="Busque aqui">
+            <label for="ipesquisa"><span class="material-symbols-outlined" id="person">search</span></label>
+        </form>
+
+        <span class="material-symbols-outlined" id="burguer" onclick="clickMenu()">menu</span>
+    <menu id="menu">
+        <input type="button" value="Fazer Login" onclick="window.location.href = 'login.html'" class="botao">
+        <ul>
+            <li><a href="#">Alimentos básicos</a></li>
+            <li><a href="#">Higiene e beleza</a></li>
+            <li><a href="#">Hortifruti</a></li>
+            <li><a href="#">Limpeza</a></li>
+            <li><a href="#">Açougue</a></li>
+        </ul>
+    </menu>  
+    </header>
+            <article>
+                <section>
+                    <a href="home.html"><img src="icones/voltar.png" alt="Voltar" class="voltar"></a>
+                    <div class="containers">
+                        <h1>Arroz</h1>
+                        <picture>
+                            <source media="(min-width: 770px )" srcset="imagens/arroz.m.png" type="image/png">
+                            <source media="(min-width: 992px)" srcset="imagens/arroz.G.png" type="image/png">
+                            <img src="imagens/arroz.png" alt="arroz" id="arroz">
+                        </picture>
+                        <div class="caixa">
+                            <p class="valor">R$30,00</p>
+                            <p>À vista no PIX com até 15% OFF</p>
+                            <p class="valor">R$40,00</p>
+                            <p>Em até 2x de R$20,00 sem juros no cartão ou em 1x no cartão com até 10% OFF</p>
+                            <form action="fake.php" method="post">
+                                <label for="number">Consultar frete e prazo de entrega:</label>
+                                <input type="text" name="number" id="inumber" placeholder="Inserir CEP" maxlength="9" onkeyup="handleZipCode(event)" required pattern="\d{5}-\d{3}"/>
+                                <input type="submit" value="OK">
+                            </form>
+                            <a href="#"><p>Não lembro meu cep</p></a>
+                        </div>
+                    </div>
+                        <div id="descricao">
+                            <h2>Descrição do Produto</h2>
+                            <p id="descrito">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi laborum laudantium deserunt itaque quia mollitia commodi, saepe molestias, rerum esse enim consectetur. Corrupti in eaque exercitationem porro esse ducimus atque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore excepturi impedit reprehenderit in beatae eveniet ipsum officia rem, voluptatibus ut voluptatum dolorum neque nihil molestiae, iste eum sed ullam non. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt aspernatur aperiam eligendi quia libero ex, iste temporibus. Alias, odio repellat reiciendis temporibus aut aspernatur. Praesentium rem recusandae porro necessitatibus eius. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                </section>
+            </article>
+
+    <footer>
+        <h1>Receba nossas ofertas por e-mail</h1>
+        <form action="fake.php" method="post" autocomplete="on">
+            <fieldset>
+                <label for="igmail">E-mail</label>
+                <input type="email" name="gmail" id="igmail" placeholder="Seu e-mail..." required minlength="8">
+            </fieldset>
+
+            <fieldset>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" placeholder="Seu nome..." required>
+            </fieldset>     
+
+            <input type="submit" value="CADASTRAR" id="cadastrar">
+
+            <h2>Redes sociais</h2>
+        <ul>
+            <li><a href="#"><img src="imagens/icone-facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="imagens/icone-instagram.png" alt=""></a></li>
+            <li><a href="#"><img src="imagens/icone-youtube.png" alt=""></a></li>
+            <li><a href="#"><img src="imagens/icone-twitter.png" alt=""></a></li>
+        </ul>
+        </form>
+        <img src="imagens/logofake.png" alt="logo fake">
+    </footer>
+    
+    <div id="fixed">
+        <p class="valor">R$30,00</p>
+        <p>À vista no PIX</p>
+        <form action="fake.php">
+            <input type="submit" value="&#x1F6D2; Comprar">
+        </form>
+    </div>
+</body>
+
+<script>
+    const handleZipCode = (event) => {
+        let input = event.target
+        input.value = zipCodeMask(input.value)
+      }
+    
+      const zipCodeMask = (value) => {
+        if (!value) return ""
+        value = value.replace(/\D/g,'')
+        value = value.replace(/(\d{5})(\d)/,'$1-$2')
+        return value
+      }
+
+      function clickMenu ( ) {  
+        if (menu.style.display == 'block') {
+            menu.style.display = 'none'
+        } else {
+            menu.style.display = 'block'
+        }
+
+     }
+
+     function mudouTamanho () { <!--Testando se está sendo exibido a exibição do menu ou não-->
+        if (window.innerwidth >=768) {
+            menu.style,display = 'block'
+        } else {
+            menu.style,display = 'none'
+        }
+    
+     }
+</script>
+
+</html>
