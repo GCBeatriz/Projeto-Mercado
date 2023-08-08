@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 @media screen and (min-width:320px) and (max-width:768px) {
+
     div#diferente {
         position: relative;
         border: 0px;
@@ -11,7 +12,7 @@
 
 }
 
-@media screen and (min-width:768px) and (max-width:992px) {
+@media screen and (min-width:768px) and (max-width:1050px) {
     
     span#burguer {
         display: none;
@@ -19,10 +20,17 @@
 
     header menu {
         display: block;
+        width: 100vw;
     }
 
     header li {
         display: inline-block;
+        position: relative;
+        top: 0px;
+        transform: translate(-5%, 0%);
+        width: 19%;
+        font-size: 0.8em;
+        padding: 0px;
     }
 
     div#diferente {
@@ -34,8 +42,10 @@
     }
 
     #logins {
-        display: block;
-        float: right;
+        display: inline-block;
+        position: relative;
+        right: -400px;
+        transform: translate(180%, -100%);
     }
 
     #login {
@@ -57,7 +67,7 @@
     }
 }
 
-@media screen and (min-width:992px) {
+@media screen and (min-width:1050px) {
 
     * {
         font-size: 0.5em;
@@ -78,28 +88,38 @@
         left: 350px;
     }
 
-    span#burguer {
-        display: none;
-    }
-
     header menu {
         display: block;
+        width: 100vw;
     }
 
     header li {
         display: inline-block;
         position: relative;
-        top: -60px;
-        
+        top: 0px;
+        transform: translate(-5%, -80%);
+        width: 19%;
+        font-size: 1em;
+        padding: 0px;
+    }
+
+    span#burguer {
+        display: none;
     }
 
     #login {
         float: right;
     }
-    
+
+    form#pesquisa {
+        display: inline-block;
+        top: 0px;
+        margin: 0 auto;
+    }
+
     #ipesquisa {
-        padding: 8px;
-        width: 400px;
+        
+        position: absolute;
     }
 
     footer {
@@ -147,6 +167,10 @@
 
     #logins {
         display: inline-block;
+        position: relative;
+        right: 10px;
+        top: 0px;
+        transform: translate(-50%, -70%);
     }
 
 }

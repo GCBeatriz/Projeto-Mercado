@@ -105,6 +105,7 @@ span {
 #pesquisa {
     display: inline-block;
     padding-top: 5px;
+    margin: 0 auto;
 }
 
 input#ipesquisa {
