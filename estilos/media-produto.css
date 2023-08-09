@@ -50,6 +50,10 @@
         margin: auto;
     }
 
+    img {
+        position: relative;
+    }
+
     #cadastrar {
         width: 200px;
         display: inline-block;

@@ -140,7 +140,7 @@ header > form > input {
     text-decoration: underline;
 }
 
-div {
+div.caixa {
     display: inline-block;
     width: calc((100% / 2) - 2rem);
     text-align: center;

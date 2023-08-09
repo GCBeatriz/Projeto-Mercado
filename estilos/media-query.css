@@ -19,18 +19,24 @@
     }
 
     header menu {
-        display: block;
+        display: inline-block;
         width: 100vw;
     }
 
     header li {
         display: inline-block;
         position: relative;
-        top: 0px;
-        transform: translate(-5%, 0%);
+        top: 9px;
+        transform: translate(-8%, 0%);
         width: 19%;
         font-size: 0.8em;
         padding: 0px;
+    }
+
+    #person {
+        position: relative;
+        float: left;
+        
     }
 
     div#diferente {
@@ -42,10 +48,10 @@
     }
 
     #logins {
-        display: inline-block;
-        position: relative;
-        right: -400px;
-        transform: translate(180%, -100%);
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        padding: 5px;
     }
 
     #login {
