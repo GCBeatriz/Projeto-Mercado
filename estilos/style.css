@@ -86,39 +86,35 @@ menu a:hover {
     font-weight: bold;
 }
 
-span {
-    display: block;
-    float: left;  
-    cursor: pointer;
-    color: white;
-    padding: 10px;
-    transform: translate(-50px, 10px);
-    
-}
-
-#burguer {
-    display: block;
-    float: left;
-    transform: translate(-110%, 130%);
-}
-
-#pesquisa {
-    display: inline-block;
-    padding-top: 5px;
-    margin: 0 auto;
+form#pesquisa {
+    text-align: center;
+    transform: translate(0, 50%);
 }
 
 input#ipesquisa {
+    display: inline-block;
     padding: 5px;
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translate(-50%);
+}
+
+span {
+    color: white;
+    cursor: pointer;
+    display: block;
+}
+
+#burguer {
+    position: relative;
+    top: 5px;
+    left: -25px;
 }
 
 #person {
-    display: inline-block;
-    
+    position: relative;
+    top: 10px;
+}
+
+#burguer {
+    transform: translate(-110%, 130%);
 }
 
 header > form > input {
@@ -173,6 +169,11 @@ h3 {
     color: white;
     font-weight: bold;
     cursor: pointer;
+}
+
+#saiba {
+    position: relative;
+    left: 0px;
 }
 
 .botao:hover {
