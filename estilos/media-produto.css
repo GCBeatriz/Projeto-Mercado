@@ -24,17 +24,10 @@
     header li {
         display: inline-block;
         position: relative;
-        top: 18px;
-    }
-
-    form#pesquisa > label {
-        position: relative;
-        display: block;
-    }
-
-    form#pesquisa {
-        display: inline-block;
-        top: 25px;
+        top: 37px;
+        width: 18%;
+        left: -30px;
+        font-size: 0.8em;
     }
 
     .botao {
@@ -91,14 +84,13 @@
     header li {
         display: inline-block;
         position: relative;
-        top: 18px;
-        width: 15%;
+        top: 33px;
+        width: 18%;
         font-size: 1em;
         padding: 0px;
     }
 
     #login {
-        display: inline-block;
         position: relative;
         float: right;
         top: 0px;
@@ -115,16 +107,6 @@
         top: 10px;
         right: 20px;
         padding: 5px;
-    }
-
-    form#pesquisa {
-        display: inline-block;
-        top: 25px;
-        margin: 0 auto;
-    }
-
-    input#ipesquisa {
-        position: absolute;
     }
 
     #descrito {
@@ -161,7 +143,12 @@
     }
 
     footer {
-        height: 380px;
+        height: 350px;
+    }
+
+    footer form {
+        background-color: rgb(10, 10, 82);
+
     }
 
     footer fieldset, #cadastrar {
@@ -169,7 +156,7 @@
     }
 
     #cadastrar {
-        width: 250px;
+        width: 240px;
     }
 
     footer fieldset label {
@@ -180,13 +167,17 @@
     
     footer fieldset input {
         padding: 15px;
-        width: 280px;
+        width: 250px;
         margin-right: 50px;
     }
 
     div#fixed {
         width: 100vw;
         position: relative;
+    }
+
+    img {
+        top: 35px;
     }
     
 }

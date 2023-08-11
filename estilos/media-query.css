@@ -31,8 +31,8 @@
     header li {
         display: inline-block;
         position: relative;
-        top: 9px;
-        transform: translate(-8%, 0%);
+        top: 11px;
+        transform: translate(-5%, 0%);
         width: 19%;
         font-size: 0.8em;
         padding: 0px;
@@ -101,7 +101,7 @@
     header li {
         display: inline-block;
         position: relative;
-        top: 0px;
+        top: 22px;
         transform: translate(-5%, -80%);
         width: 19%;
         font-size: 1em;
@@ -110,6 +110,11 @@
 
     span#burguer {
         display: none;
+    }
+
+    #person {
+        position: relative;
+        top: 15px;
     }
 
     #login {

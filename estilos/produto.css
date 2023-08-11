@@ -10,17 +10,6 @@ article section {
     flex-direction: column;
 }
 
-form#pesquisa {
-    display: inline-block;
-    padding-top: 5px;
-    margin: 0 auto;
-}
-
-input#ipesquisa {
-    padding: 5px;
-    position: absolute;
-}
-
 .voltar {
     width: 30px;
 }
@@ -92,6 +81,7 @@ div#fixed {
     margin: 0px;
     padding: 0px;
     border: none;
+    text-align: center;
     left:0px; 
     bottom:0px;
     overflow:hidden;
@@ -99,7 +89,10 @@ div#fixed {
 }
 
 div.caixa {
+    position: relative;
     border: none;
+    margin: 0 auto;
+    width: calc((100% / 1) - 2rem);
 }
 
 #fixed p {
