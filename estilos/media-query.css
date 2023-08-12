@@ -28,10 +28,15 @@
         width: 100vw;
     }
 
+    header ul {
+        position: relative;
+        top: 12px;
+    }
+
     header li {
         display: inline-block;
-        position: relative;
-        top: 11px;
+        
+       
         transform: translate(-5%, 0%);
         width: 18%;
         font-size: 0.8em;
@@ -83,8 +88,8 @@
     }
 
     header {
-        position: relative;
-        height: 100px;
+        position: absolute;
+        
     }
 
     header form {
@@ -94,13 +99,14 @@
     }
 
     header menu {
+        position: relative;
         display: block;
         width: 100vw;
     }
 
     header li {
         display: inline-block;
-        position: relative;
+       position: relative;
         top: 22px;
         transform: translate(-5%, -80%);
         width: 19%;

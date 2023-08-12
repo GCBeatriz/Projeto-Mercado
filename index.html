@@ -19,7 +19,7 @@
             </form>
             
             <span class="material-symbols-outlined" id="burguer" onclick="clickMenu()">menu</span>
-                <menu id="menu">
+        <menu id="menu">
             <input type="button" value="Fazer Login" onclick="window.location.href = 'login.html'" class="botao" id="logins">
             <ul>
                 <li><a href="#">Alimentos básicos</a></li>
@@ -28,7 +28,7 @@
                 <li><a href="#">Limpeza</a></li>
                 <li><a href="#">Açougue</a></li>
             </ul>
-                </menu>
+        </menu>
     </header>
 
     <main>
@@ -125,23 +125,24 @@
         <p id="info">Desenvolvido por <a href="#">Beatriz Gonçalves</a> para projeto pessoal!</p>
     </footer>
 
-    <script> function clickMenu ( ) {  
+    <script>function clickMenu ( ) {  
         if (menu.style.display == 'block') {
             menu.style.display = 'none'
         } else {
             menu.style.display = 'block'
         }
-
-     }
-
-     function mudouTamanho () { <!--Testando se está sendo exibido a exibição do menu ou não-->
-        if (window.innerwidth >=768) {
-            menu.style,display = 'block'
-        } else {
-            menu.style,display = 'none'
-        }
     
      }
-    </script>
+    
+     function mudouTamanho () { 
+        if (window.innerWidth >= 0 && window.innerWidth <= 767) {
+            menu.style.display = 'none' 
+        } else if (window.innerWidth >= 768 && window.innerWidth <= 1049) {
+            menu.style.display = 'inline-block'
+        } else if(window.innerWidth >=1050){
+            menu.style.display = 'block'
+        }
+    
+     }</script>
 </body>
 </html>

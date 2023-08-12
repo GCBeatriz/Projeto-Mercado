@@ -119,11 +119,13 @@
 
      }
 
-     function mudouTamanho () { <!--Testando se está sendo exibido a exibição do menu ou não-->
-        if (window.innerwidth >=768) {
-            menu.style,display = 'block'
-        } else {
-            menu.style,display = 'none'
+     function mudouTamanho () { 
+        if (window.innerWidth >= 0 && window.innerWidth <= 767) {
+            menu.style.display = 'none' 
+        } else if (window.innerWidth >= 768 && window.innerWidth <= 1049) {
+            menu.style.display = 'block'
+        } else if(window.innerWidth >=1050){
+            menu.style.display = 'block'
         }
     
      }
