@@ -23,6 +23,10 @@
         display: none;
     }
 
+    header {
+        height: 110px;
+    }
+
     header menu {
         display: inline-block;
         width: 100vw;
@@ -37,7 +41,7 @@
         display: inline-block;
         
        
-        transform: translate(-5%, 0%);
+        transform: translate(-5%, 27%);
         width: 18%;
         font-size: 0.8em;
         padding: 0px;
