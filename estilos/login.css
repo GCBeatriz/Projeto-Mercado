@@ -23,6 +23,7 @@ html, body {
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 main {
@@ -30,9 +31,10 @@ main {
     background-color: white;
     border-radius: 15px;
     min-width: 250px;
-    max-width: 500px;
+    max-width: 800px;
     height: 100vh;
     text-align: center;
+    box-sizing: border-box;
 }
 
 #imagem {
@@ -43,6 +45,7 @@ main {
     background-attachment: scroll;
     background-size: cover;
     background-repeat: no-repeat;
+    display: block;
 }
 
 h1 {
