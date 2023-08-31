@@ -2,6 +2,12 @@
 
 :root {
     --background-principal: white;
+    --cor0: #BDD5EA;
+    --cor1: #FFD9DA;
+    --cor2: #AD0723;
+    --cor3: #B4C5E4;
+    --cor4: #335C67;
+    --cor5: #06134F;
 }
 
 * {
@@ -13,7 +19,7 @@
 }
 
 body, html {
-    background-color: rgb(10, 10, 82);
+    background-color: var(--cor5);
     width: 100vw;
     height: 100vh;
     overflow-x: hidden
@@ -27,20 +33,20 @@ main, menu {
 }
 
 main {
-    background-color: white;
+    background-color: var(--background-principal);
     text-align: center;
     margin-top: 5px;
 }
 
 footer {
-    background-color: white;
+    background-color: var(--background-principal);
     text-align: center;
     margin-top: 0px;
     width: 100vw;
 }
 
 header {
-    background-color: rgb(177, 177, 252);
+    background-color: var(--cor3);
     width: 100%;
     min-height: 15%;
     font-size: 15px;
@@ -71,7 +77,7 @@ menu li {
 
 menu a {
     text-decoration: none;
-    background-color: rgb(177, 177, 252);
+    background-color: var(--cor0);
     color: rgb(10, 10, 82);
     font-weight: bold;
     display: block;
@@ -165,7 +171,7 @@ h3 {
     margin-top: 3px;
     margin-left: 5px;
     border-radius: 5px;
-    background-color: rgb(10, 10, 82);
+    background-color: var(--cor2);
     color: white;
     font-weight: bold;
     cursor: pointer;
@@ -177,12 +183,12 @@ h3 {
 }
 
 .botao:hover {
-    background-color: rgba(10, 10, 82, 0.13);
+    background-color: #be5e5e;
     color: rgb(10, 10, 82);
 }
 
 footer {
-    background-color: rgb(150, 174, 238);
+    background-color: var(--cor0);
     padding-bottom: 0px;
 }
 
@@ -228,19 +234,19 @@ footer >form > input {
     margin: auto;
     padding: 5px;
     border-radius: 5px;
-    background-color: rgb(165, 165, 233);
+    background-color: var(--cor4);
     color: white;
 }
 
 footer > form > input:hover {
-    background-color: rgb(188, 188, 226);
+    background-color: #3f6f7c;
     color: black;
     cursor: pointer;
 }
 
 #info {
     display: block;
-    background-color: rgb(174, 174, 245);
+    background-color: var(--cor1);
     margin-top: 40px;
     padding: 10px;
 }
